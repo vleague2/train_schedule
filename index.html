@@ -9,16 +9,150 @@
     <!-- Bootstrap link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merienda|Roboto" rel="stylesheet">
+
+
     <!-- Custom CSS link -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
 </head>
 <body>
 
+    <div class="jumbotron jumbotron-fluid pb-4 pt-4">
+        <div class="container text-center">
+            <h1 class="display-4" id="headline">DESTINATION: ELSEWHERE</h1>
+            <p class="lead">Transport Yourself Far Away....</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card mb-5">
+            <div class="card-header text-center">
+                <b>Current Train Schedule</b>
+            </div>
+
+            <div class="container" id="traintable">
+                <div class="row pt-3 pb-3 pr-2 pl-2" id="headingsrow">
+                    <div class="col-md">
+                        <b>Train Name</b>
+                    </div>
+
+                    <div class="col-md">
+                        <b>Destination</b>
+                    </div>
+
+                    <div class="col-md">
+                        <b>Frequency (mins)</b>
+                    </div>
+
+                    <div class="col-md">
+                        <b>Next Arrival</b>      
+                    </div>
+
+                    <div class="col-md">
+                        <b>Minutes Until Arrival</b>
+                    </div> 
+                </div>
+
+                <div class="row pt-3 pb-3 pr-2 pl-2 tablerow">
+                    <div class="col-md">
+                        Hogwarts Express
+                    </div>
+
+                    <div class="col-md">
+                        Hogwarts
+                    </div>
+
+                    <div class="col-md">
+                        1440
+                    </div>
+
+                    <div class="col-md">
+                        Next Arrival      
+                    </div>
+
+                    <div class="col-md">
+                        Minutes Until Arrival
+                    </div> 
+                </div> 
+
+                <div class="row pt-3 pb-3 pr-2 pl-2 tablerow">
+                    <div class="col-md">
+                        Capitol Express
+                    </div>
+
+                    <div class="col-md">
+                        The Capitol
+                    </div>
+
+                    <div class="col-md">
+                        30
+                    </div>
+
+                    <div class="col-md">
+                        Next Arrival      
+                    </div>
+
+                    <div class="col-md">
+                        Minutes Until Arrival
+                    </div> 
+                </div> 
+            </div>
+        </div>
+
+        <div class="card mb-5">
+            <div class="card-header text-center">
+                <b>Add Train</b>
+            </div>
+
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="form-group mt-3">
+                                <label for="trainname">Train Name</label>
+                                <input type="text" class="form-control" id="trainName">
+                            </div>
+                        </div>
+
+                        <div class="col-md">
+                            <div class="form-group mt-3">
+                                <label for="traindestination">Destination</label>
+                                <input type="text" class="form-control" id="trainDest">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="form-group mt-3">
+                                <label for="firstTrain">First Train Time in HH:mm (Military)</label>
+                                <input type="text" class="form-control" id="firstTrain">
+                            </div>
+                        </div>
+
+                        <div class="col-md">
+                            <div class="form-group mt-3">
+                                <label for="trainfrequency">Frequency (in mins)</label>
+                                <input type="text" class="form-control" id="trainFrequency">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <button type="submit" class="btn mb-4 mt-2">Submit</button>
+                </form>
+                
+
+            </div>
+
+        </div>
+
+
+    </div>
 
 
 
 
-    
 
 
 
