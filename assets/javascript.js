@@ -42,6 +42,11 @@ $("#submit").on("click", function(event) {
         trainFreq: trainFreq
     })
 
+    // clear input form
+    $("#trainName").val("");
+    $("#trainDest").val("");
+    $("#firstTrain").val("");
+    $("#trainFrequency").val("");
 });
 
 // on database update (child added), pass in data snapshot
